@@ -805,6 +805,9 @@ function isPackageImport(source) {
   if (match == null) {
     return false;
   }
+  if (source.startsWith("src/")) {
+    return false;
+  }
   const { errors = [], warnings = [] } = validateNpmPackageName(match[0]);
   return (
     errors.length === 0 &&

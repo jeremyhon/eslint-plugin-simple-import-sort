@@ -884,6 +884,7 @@ const baseTests = expect => ({
           |import {} from "./a/0";
           |import {} from "@/components/error.vue"
           |import {} from "@/components/Alert"
+          |import {} from "src/components/Alert"
           |import {} from "~/test"
           |import {} from "#/test"
           |import {} from "fs";
@@ -916,6 +917,7 @@ const baseTests = expect => ({
           |import {} from "Fs";
           |import {} from "http://example.com/script.js";
           |import {} from "https://example.com/script.js";
+          |import {} from "src/components/Alert"
           |import {} from "...";
           |import {} from ".../";
           |import {} from ".a";
